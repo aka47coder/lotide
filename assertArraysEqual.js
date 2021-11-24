@@ -12,6 +12,8 @@ function eqArrays(arr1,arr2){
     }
     if (q===arr2.length){
       return true;
+    }else{
+    return false;
     }
 }
 
