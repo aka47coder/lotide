@@ -26,7 +26,7 @@ function assertEqual(eqArrays,x){
   
 }
 
-console.log(assertEqual(eqArrays([1, 2,3], [1, 2, 3]), true));
+console.log(assertEqual(eqArrays([1, 2,2], [1, 2, 3]), true));
 
 
 
