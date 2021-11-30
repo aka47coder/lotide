@@ -1,4 +1,6 @@
-console.log(eqArrays([1, 2, 3], [1,2,3]))// => should PASS
+const assertEqual = require('./assertEqual');
+
+
 
 function eqArrays(arr1,arr2){
   
@@ -10,10 +12,12 @@ function eqArrays(arr1,arr2){
       }
         
     }
-    if (q===arr2.length&&q===arr1.length){
+    if (q===arr2.length){
       return true;
     }
     else{
       return false;
     }
 }
+
+console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]),true));// => should PASS
