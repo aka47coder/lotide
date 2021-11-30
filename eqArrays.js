@@ -20,4 +20,4 @@ function eqArrays(arr1,arr2){
     }
 }
 module.exports = eqArrays;
-console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]),true));// => should PASS
+//console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]),true));// => should PASS
