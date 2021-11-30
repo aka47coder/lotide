@@ -1,34 +1,8 @@
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+//assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
-function eqArrays(arr1,arr2){
-  
-  var q = 0;
-  for (let i = 0;i < arr1.length;i++){
-  
-      if (arr1[i] === arr2[i]){
-        q=q+1;
-      }
-        
-    }
-    if (q===arr2.length){
-      return true;
-    }else{
-    return false;
-    }
-}
 
-function assertEqual(eqArrays,x){
-  if (eqArrays===x){
-    return `😀 Assertion Passed: ${eqArrays} === ${x} `;
-  }
-  else {
-    return `❌ Assertion Failed: ${eqArrays} !== ${x}`
-    
-  }
-  
-}
 
+console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]),true));
 console.log(assertEqual(eqArrays([1, 2,2], [1, 2, 3]), true));
-
-
-
